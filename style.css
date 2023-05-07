@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color:white;
+    font-family: arial;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 5.5% 94.5%;
+    background-color:#0f0f0f ;
+}
+
+aside{
+    align-items: center;
+    height: 100vh;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+aside div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#burguerMenu{
+align-items: center;
+height: 40px;
+width: 40px;
+margin-top: 10px;
+margin-bottom: 15px;
+margin-left:12px ;
+border-radius: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside{
+margin-left: 0px;
+}
+
+aside div img{
+    width: 36px;
+}
+
+.icons{
+    width:30px;
+}
+
+aside div a{
+    font-size: 0.7rem;
+}
+
+#Botones{
+    display: flex;
+    gap: 5px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+#Logo{
+    width: 130px;
+    height: 60px;
+    margin: 0px;
+}
+
+button {
+    background-color: #3a3a3a;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #5a5a5a;
+}
+
+#content {
+    grid-area: content;
+    padding: 1rem;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+#busqueda{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#busqueda div{
+    display: flex;
+    align-items: center;
+    border:#303030 solid 2px;
+    border-radius: 25px;
+}
+
+#busqueda input{
+width: 550px;
+height: 35px;
+padding-left: 10px;
+border-radius: 25px 0px 0px 25px;
+border: none;
+background-color: transparent;
+}
+
+#lupa{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #232323;
+border-radius: 0px 25px 25px 0px;
+border-color: #303030;
+border-style: solid;
+border-width: 0px 0px 0px 2px;
+height: 39px;
+width: 60px;
+}
+
+#lupa img{
+    width: 60px;
+    border-radius: 0px 25px 25px 0px;
+
+}
+
+#lupa:hover{
+    background-color: #5a5a5a;
+}
+
+#microfono{
+    align-items: center;
+    display:flex ;
+    justify-content:center ;
+    height: 40px;
+    width: 40px;
+    background-color: #232323;
+    border-radius: 50%;
+}
+
+#microfono:hover{
+    background-color: #5a5a5a;
+}
+
+#microfono img{
+    width: 40px;
+}
+
+#acciones{
+    display:flex;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.acciones{
+        align-items: center;
+        display:flex ;
+        justify-content:center ;
+        height: 40px;
+        width: 40px;
+        background-color:#0f0f0f;
+        border-radius: 50%;
+    }
+
+.acciones:hover{
+    background-color: #5a5a5a;
+}
+
+#acciones a img{
+width: 35px;
+}
+
+.barra{
+    width: 64px;
+    height: 74px;
+    padding: 16px 0px 14px;
+    margin-left: 12px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.barra:hover{
+    background-color: #3a3a3a;
+}
+
+#cuadriculaVideos{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    margin-left: 0px;
+    margin-right: 3px;
+}
+
+.videos{
+    margin-top: 20px;
+    width:340.23px;
+    height:191.38px;
+    border-radius: 10px;
+}
+
+.videos:hover{
+    border-radius: 0px;
+}
+
+.CajaVideo{
+    display: flex;
+    flex-direction: column;
+}
+
+.infoVideo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 9px;
+}
+
+.infoVideo div {
+max-width: 100%;
+}
+
+.infoVideo img{
+    width: 40px;
+    height:40px;
+}
+
+.infoVideo div p1{
+    margin-bottom:4px ;
+    display: flex;
+    font-size:120%;
+    max-width: 100%;
+}
+.infoVideo div p1:hover{
+    text-decoration: underline;
+}
+
+.infoVideo div p2{
+    margin-bottom:2px ;
+    display: flex;
+    font-size: small;
+    color: #9B9B9B;
+}
+
+.infoVideo div p2:hover{
+    color: white;
+}
+
+.infoVideo div p3{
+    display: flex;
+    font-size: small;
+    color: #9B9B9B;
+}
+
+.perfilvids{
+    border-radius: 150px;
+    width: 32px;
+    height:32px;
+}
+
+#all{
+    background-color: white;
+    color: #0f0f0f;
+}
+
+#cuadriculaShorts{
+    display: grid;
+    grid-template-columns: repeat(10,2fr);
+    margin-left: 0px;
+    margin-right: 8px;
+}
+
+.shorts{
+    margin-top: 20px;
+    width:164.61px;
+    height:291.34px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+.shorts:hover{
+    border-radius: 0px;
+}
+
+.infoshorts div{
+    max-width: 100%;
+}
+
+.infoshorts div p1{
+    margin-bottom:4px ;
+    display: flex;
+    font-size:120%;
+    max-width: 100%;
+}
+
+.infoshorts div p1:hover{
+    text-decoration: underline;
+}
+
+.infoshorts div p2{
+    margin-bottom:2px ;
+    display: flex;
+    font-size: small;
+    color: #9B9B9B;
+}
+
+#border{
+border:solid #3F3F3F;
+border-left: 50px;
+border-right: 50px;
+margin-right: 30px;
+margin-top: 80px;
+
+/*border:solid #3F3F3F;
+border-width: 5px 0px 5px 0px;*/
+}
+
+#Shorts{
+    display: flex;
+    margin-top: 15px ;
+}
+
+#Shorts a{
+    font-size: large;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.CajaShorts{
+    margin-bottom: 20px;
+}
+
+.infoVideo a{
+    margin-bottom:4px ;
+    display: flex;
+    font-size:120%;
+    max-width: 100%;
+}
+
+.infoVideo a:hover{
+    text-decoration: underline;
+}
+
+.infoVideo #ancla2v1 {
+    margin-bottom:2px ;
+    display: flex;
+    font-size: small;
+    color: #9B9B9B;
+}
+
+.infoVideo #ancla2v1:hover{
+    color: white;
+}
+
+.infoshorts div a{
+    margin-bottom:4px ;
+    display: flex;
+    font-size:120%;
+    max-width: 100%;
+}
+
+.infoshorts div a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
